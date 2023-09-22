@@ -3,55 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>多个音频播放器</title>
+    <title>简约大气风格网页</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* 淡灰色背景 */
+            color: #333; /* 深灰色文本 */
             text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff; /* 白色背景 */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
         }
         h1 {
-            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333; /* 深灰色标题 */
         }
-        .audio-player {
-            margin: 20px;
-            padding: 10px;
-            background-color: #fff;
-            border: 1px solid #ccc;
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        audio {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #333; /* 深灰色边框 */
             border-radius: 5px;
-            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>多个音频播放器</h1>
-
-    <!-- 音频播放器1 -->
-    <div class="audio-player">
-        <h2>音频标题1</h2>
+    <div class="container">
+        <h1>简约大气风格网页</h1>
+        <p>欢迎来到这个简约而大气的网页示例。</p>
         <audio controls>
-            <source src="audio1.mp3" type="audio/mpeg">
+            <source src="念响.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-    </div>
-
-    <!-- 音频播放器2 -->
-    <div class="audio-player">
-        <h2>音频标题2</h2>
-        <audio controls>
-            <source src="audio2.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <!-- 音频播放器3 -->
-    <div class="audio-player">
-        <h2>音频标题3</h2>
-        <audio controls>
-            <source src="audio3.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <img class="image" src="image.jpg" alt="图片"> <!-- 替换为你的图片路径 -->
     </div>
 <meta charset="utf-8">
 <meta lang="zh">
