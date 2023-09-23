@@ -3,65 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简约大气风格网页</title>
+    <title>我的作品集</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset CSS 样式 */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0; /* 淡灰色背景 */
-            color: #333; /* 深灰色文本 */
+            box-sizing: border-box;
+        }
+
+        /* 全局样式 */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
             text-align: center;
         }
-        .container {
-            max-width: 100%; /* 确保容器宽度适应不同屏幕 */
-            margin: 0 auto;
+        header {
+            background-color: #111;
+            padding: 20px 0;
+        }
+        header h1 {
+            color: #fff;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: #111;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* 作品展示样式 */
+        .portfolio-item {
+            margin: 20px;
             padding: 20px;
-            background-color: #fff; /* 白色背景 */
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+            border: 1px solid #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            text-align: center;
         }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #333; /* 深灰色标题 */
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #fff;
+            transition: transform 0.3s ease-in-out;
         }
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
+        .portfolio-item img:hover {
+            transform: scale(1.1);
+        }
+        .portfolio-item h2 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .portfolio-item p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* 音乐播放器样式 */
+        .music-player {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
         audio {
             width: 100%;
-            margin-top: 20px;
-        }
-        .image {
-            max-width: 100%;
-            height: auto;
-            border: 5px solid #333; /* 深灰色边框 */
+            background-color: #222;
+            padding: 10px;
             border-radius: 5px;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+        }
+
+        /* 响应式样式 */
+        @media screen and (max-width: 768px) {
+            .portfolio-item {
+                width: 100%;
+            }
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #111;
+            padding: 20px 0;
+            color: #fff;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>简约大气风格网页</h1>
-        <p>欢迎来到这个简约而大气的网页示例。</p>
-        <audio controls>
-            <source src="念响.mp3" type="audio/mpeg"> <!-- 替换为你的音频文件路径和类型 -->
-            Your browser does not support the audio element.
-        </audio>
-        <img class="image" src="image.jpg" alt="图片"> <!-- 替换为你的图片路径 -->
+    <header>
+        <h1>欢迎来到我的作品集</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">作品1</a></li>
+            <li><a href="#">播放器1</a></li>
+            <li><a href="#">作品2</a></li>
+            <li><a href="#">播放器2</a></li>
+            <li><a href="#">作品3</a></li>
+            <li><a href="#">播放器3</a></li>
+            <li><a href="#">作品4</a></li>
+            <li><a href="#">播放器4</a></li>
+            <li><a href="#">作品5</a></li>
+            <li><a href="#">播放器5</a></li>
+            <li><a href="#">关于我</a></li>
+        </ul>
+    </nav>
+    <div class="portfolio-item">
+        <img src="image1.jpg" alt="作品1">
+        <h2>作品1</h2>
+        <p>这是作品1的介绍文字。</p>
     </div>
-<meta charset="utf-8">
-<meta lang="zh">
-<head>
-    <title>Helloworld! </title>
-    <h1>保持热爱，奔赴山海~</h1>
-    <script>
-        alert("Hello, welcome!")
-    </script>
-</head>
-<body>
-    <p>Helloworld! </p>
+    <div class="music-player">
+        <h2>音乐播放器1</h2>
+        <audio controls>
+            <source src="music1.mp3" type="audio/mpeg">
+            您的浏览器不支持音频播放。
+        </audio>
+    </div>
+    <div class="portfolio-item">
+        <img src="image2.jpg" alt="作品2">
+        <h2>作品2</h2>
+        <p>这是作品2的介绍文字。</p>
+    </div>
+    <div class="music-player">
+        <h2>音乐播放器2</h2>
+        <audio controls>
+            <source src="music2.mp3" type="audio/mpeg">
+            您的浏览器不支持音频播放。
+        </audio>
+    </div>
+    <div class="portfolio-item">
+        <img src="image3.jpg" alt="作品3">
+        <h2>作品3</h2>
+        <p>这是作品3的介绍文字。</p>
+    </div>
+    <div class="music-player">
+        <h2>音乐播放器3</h2>
+        <audio controls>
+            <source src="music3.mp3" type="audio/mpeg">
+            您的浏览器不支持音频播放。
+        </audio>
+    </div>
+    <div class="portfolio-item">
+        <img src="image4.jpg" alt="作品4">
+        <h2>作品4</h2>
+        <p>这是作品4的介绍文字。</p>
+    </div>
+    <div class="music-player">
+        <h2>音乐播放器4</h2>
+        <audio controls>
+            <source src="music4.mp3" type="audio/mpeg">
+            您的浏览器不支持音频播放。
+        </audio>
+    </div>
+    <div class="portfolio-item">
+        <img src="image5.jpg" alt="作品5">
+        <h2>作品5</h2>
+        <p>这是作品5的介绍文字。</p>
+    </div>
+    <div class="music-player">
+        <h2>音乐播放器5</h2>
+        <audio controls>
+            <source src="music5.mp3" type="audio/mpeg">
+            您的浏览器不支持音频播放。
+        </audio>
+    </div>
+    <footer>
+        &copy; 2023 您的名字 | 简约艺术风
+    </footer>
 </body>
 </html>
